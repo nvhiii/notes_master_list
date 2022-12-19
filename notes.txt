@@ -1,0 +1,67 @@
+Ch1: Environment
+
+javac = turns java source file into class bytecode
+
+java = executes program
+
+jar = packages all files tg
+
+javadoc = creates documentation
+
+Fields & Methods
+
+Fields = variables
+
+Methods = functions & procedures
+
+Tg, these two are called members of a class
+
+Keyword = a word with special meaning in the Java language
+
+void = a special keyword & return type that indicates that no value is returned
+       ^^ Print stmnts usually fall under void methods
+
+Parameter = information needed to be provided to certain methods before execution
+
+Comment = placed in code for readability
+
+- single line comments start with '//'
+
+- multi line comments go between '/* */'
+
+- javadoc comments go like so:
+
+    /** (starts w/ a double asterik so it can be differentiated against multi line
+     *
+     *
+     */
+
+Top-level type = a data structure that can be defined independently within a source file
+
+* You can put more than one class in a file, but only one of the classes can be public *
+
+There are multiple ways to satisfy the main method param list:
+
+    - String[] args
+    - String options[]
+    - String... friends
+
+** when using String[] args, you can print arguments out on command line **
+
+    e.g.
+
+    **in command prompt** // one word input
+
+    javac Zoo.java -> turns source file into bytecode
+
+    java Zoo Bronx Zoo -> line 1 output: Bronx / line 2 output: Zoo
+
+    vs.
+
+    **in command prompt** // two word input
+
+    javac Zoo.java -> turns source file into bytecode
+
+    java Zoo "Nahi Bronx" zoo -> line 1 output: Nahi Bronx / line 2 output: Zoo
+
+Packages
