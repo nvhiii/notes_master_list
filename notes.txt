@@ -64,4 +64,81 @@ There are multiple ways to satisfy the main method param list:
 
     java Zoo "Nahi Bronx" zoo -> line 1 output: Nahi Bronx / line 2 output: Zoo
 
-Packages
+Packages & Imports - Help ppl understand where we get certain instantiations from
+
+Wildcards - used to import classes in the same package
+
+    e.g.
+
+    import java.util.*;
+
+    ^ '*' indicates a selection of all classes in same package, doesn't indicate the selection of child packages, fields, or methods
+
+In order to use wildcards, the import must be specific enough until the class stage where the class you need is in order to use the asterik
+
+Redundant Imports - imports that are unnecessary as they are already invoked by compiler automatically
+
+    e.g.
+
+    java.lang.*;
+
+    &&
+
+    java.lang.System;
+
+In order to find redundant imports, read code up to down
+
+    e.g.
+
+    import java.lang.System; // redundant
+    import java.lang.*;      // redundant
+    import java.util.Random;
+    import java.util.*;      // redundant b/c specific class that is needed already explicitly imported
+
+For input and output class imports, below is the format:
+
+    e.g.
+
+    import java.nio.file.*;
+
+Creating New Package
+
+- Must have package declaration as a field of a sort
+    - Include any classes that the package will contain
+    - To test if the package creation is a success, create another package and import the first package inside the second package
+
+Compiling and Running Code w/ Packages
+
+    1. In same parent file, create multiple packages with classes you want each package to have exclusively
+    2. Then via the command prompt, navigate to parent file
+    3. Then in command prompt, turn the specific classes into class bytecode using javac
+
+        e.g.
+
+        javac packagea/ClassA.java packageb/ClassB.java
+
+        Leads to create the class bytecode below -->
+
+        packagea/classA.class && packageb/classB.class
+
+    4. Compile using the package that imported the subclass from the other package
+
+        e.g.
+
+        java packageb.ClassB
+
+Compiling to a Different Directory
+
+- by default, javac places the bytecode class files in the file where source code is located
+
+- if you wish to change this, use the -d to change directory where the class bytecode will be stored
+
+    e.g.
+
+    javac -d classes packagea/ClassA.java packageb/ClassB.java
+
+    ^^ this changes the directory from default package directory for bytecode to classes directory
+    (more neat)
+
+
+
