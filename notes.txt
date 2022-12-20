@@ -140,5 +140,11 @@ Compiling to a Different Directory
     ^^ this changes the directory from default package directory for bytecode to classes directory
     (more neat)
 
+    ^^ Also means that the directory you wish to change to already exists.
+
+IMPORTANT ACRONYM:
+
+P . I . C . F. M = Package | Imports | Classes | Fields | Methods
+
 
 

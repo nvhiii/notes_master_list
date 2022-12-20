@@ -1,0 +1,29 @@
+HOW TO CREATE REPO AND ADD STUFF VIA INTELLIJ:
+
+Prereq: Must have git
+
+1. First, create a repository on github
+
+2. Then gather https: clone link
+
+3. Then, navigate to filepath where you want to store repo via cmd prompt.
+
+4. Then do git clone <insert link here> (in cmd prompt)
+
+5. Open the folder via IDE (in this case, IntelliJ)
+
+6. Create a module with up-to-date JDK to host src file
+
+7. Now you can add whatever code & files you want to this repo
+
+8. To commit and push these changes, do the following:
+
+9. Enter 'git add .' in command prompt of filepath of repo
+
+10. Enter 'git commit -m <enter msg here>'
+
+11. Enter 'git push'
+
+12. Repository on github should be updated.
+
+
