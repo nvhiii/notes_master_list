@@ -146,5 +146,83 @@ IMPORTANT ACRONYM:
 
 P . I . C . F. M = Package | Imports | Classes | Fields | Methods
 
+Javac operations:
+
+-cp = location of classes needed to compile program
+
+-d <dir> = location to change dir of bytecode of source files
+
+Compiling with JAR files
+
+<revisit this later>
+
+Creating a JAR file
+
+    Syntax:
+
+    jar -cvf myNEwFile.jar .
+
+    (to specify the dir as well, do the following below)
+
+    jar -cvf myNewFile.jar -C dir .
+
+    (create verbose file = cvf)
+
+Object Creation
+
+Calling Constructors:
+
+    e.g.
+
+    Park p = new Park();
+
+    ^^ this is called instantiation of a class
+
+    ^^ also is basically calling a constructor
+
+Constructors:
+- Cannot have return type (void, int, string, bool, etc.)
+
+Code Block
+
+- anything between a set of '{}' is considered a code block
+
+- code blocks can be inside or outside of methods
+
+    inside methods code block = execute when method called
+
+    outside methods code block = instance initializer block
+
+Order of initialization:
+
+** Fields and Initializer blocks run before all methods **
+
+Data Types
+
+Primitive Types:
+
+Boolean
+Byte
+Short
+Int
+Long
+Float
+Double
+Char
+
+^ these are literals, and they differ from String (that is not primitive)
+
+Reference Types:
+
+- when you assign a variable to an instantiation of a class
+
+Primitive types can NEVER be null, whereas reference types can
+
+Wrapper Classes:
+
+- used to turn primitive type into reference type
+
+** end on text block formatting for 12-20 **
+
 
 
