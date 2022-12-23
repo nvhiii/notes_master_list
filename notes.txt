@@ -113,6 +113,12 @@ Compiling and Running Code w/ Packages
     2. Then via the command prompt, navigate to parent file
     3. Then in command prompt, turn the specific classes into class bytecode using javac
 
+    ** Important takeaway: Package and classes in package to be converted to class bytecode first **
+
+        ^^ then cd to directory where the bytecode classes are stored and then compile there using 'java <insert packageName.className>'
+
+            ^^ the package to compile will the one that is importing the other package
+
         e.g.
 
         javac packagea/ClassA.java packageb/ClassB.java
@@ -195,7 +201,7 @@ Code Block
 
 Order of initialization:
 
-** Fields and Initializer blocks run before all methods **
+** Fields and Initializer blocks run before all methods & constructors **
 
 Data Types
 
@@ -222,7 +228,98 @@ Wrapper Classes:
 
 - used to turn primitive type into reference type
 
-** end on text block formatting for 12-20 **
+- START ON 12-22 HERE -
+
+Defining Text Blocks
+
+Text Blocks = java tool used to overcome hassle of using String with many newline and '\' syntax
+
+    e.g.
+
+    String textBlock = """
+        " Java Study Guide"
+            by Scott & Jeanie""";
+
+
+Incidental whitespace v. Essential whitespace
+
+Incidental whitespace = happens to be there to make code easier to read
+
+Essential whitespace = part of the String user creates and is important to the user
+
+\" = "
+
+\""" = """ (only in textblock, invalid for String)
+
+\"\"\" = """
+
+" " = space at end of string is a space, for textblock it is ignored
+
+\s = 2 spaces
+
+\ (at end of line) = invalid if for String, omits new line in text block
+
+Indentifiers = variables
+
+    ^^ make sure they're not reserved keywords
+
+Identifier naming rules:
+
+1. Must start with _, letter, or currency symbol
+
+2. Can have #, but cannot start w/ #
+
+3. No reserved keywords
+
+4. Cannot be a single '_'
+
+Declaring multiple variables:
+
+- if share same type, write on same line (type is specified only once)
+- different types cannot be compiled on same line
+
+    e.g. String name, int number = 1; // throws compiler error
+
+Variable Initialization
+
+Local var = variable that is initialized within constructor, method, or init block
+
+Final local var value cannot be altered after creation
+
+** compiler won't do anything if there's a uninitialized local var that isn't used
+    only concerned if user tries to use uninitialized local var**
+
+Instance v. Class Variables
+
+Instance variable = variable to define specific instance of a class (e.g. Nahi is an instance of Human class)
+
+Class variable = variable that is defined on class level and shared among all instances of the class
+
+**Instance and class variables don't require initialization unlike local variables.
+
+    ^^ default values are null (object), 0 (numeric), false (boolean)
+
+Type inference w 'var'
+
+- compiler determines the type for you
+
+- var must be initialized, so that there can be a process of inferring type for compiler
+
+    ^^ (e.g. var numOfPpl; var numOfPpl = 44; WILL NOT WORK)
+
+Variable Scope (for Local Var)
+
+- each unique set of {} is a code block, and they indicate a different scope
+
+- Scope of variables can go from bigger brackets to nested ones, but not from smaller
+    to larger brackets
+
+Variable Scope (for Instance Var + Class Var)
+
+- the var is in scope for the entirity of the object's 'life'
+
+- 
+
 
 
 
