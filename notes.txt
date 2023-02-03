@@ -261,7 +261,7 @@ Essential whitespace = part of the String user creates and is important to the u
 
 Indentifiers = variables
 
-    ^^ make sure they're not reserved keywords
+    ^^ make sure they're not reserved keywords (e.g. public is a keyword, Public is not)
 
 Identifier naming rules:
 
@@ -318,7 +318,27 @@ Variable Scope (for Instance Var + Class Var)
 
 - the var is in scope for the entirity of the object's 'life'
 
-- 
+** << INSERT NOTES ABOUT GARBAGE COLLECTION, and NO POINTERS TO OBJECT HERE >> **
+
+Operators
+
+- In many java expressions, we use operands alongside operators
+
+    e.g.
+
+    int x = y + z;
+
+    ^ x, y, and z are OPERANDS
+
+    ^ =, + are OPERATORS
+
+The 3 types of operators
+
+    1. Unary - applied to one operand
+    2. Binary - applied to two operands
+    3. Ternary - applied to three operands
+
+
 
 
 
