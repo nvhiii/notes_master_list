@@ -8,6 +8,10 @@ public class Cat extends Animal1 {
 
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     public void speak() {
 
         System.out.println("meow");
