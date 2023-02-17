@@ -1,4 +1,4 @@
-package cisc3130;
+package cisc3130.hw1;
 
 public class ClockTime implements Comparable<ClockTime> {
 

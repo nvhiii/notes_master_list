@@ -1,4 +1,4 @@
-package cisc3130;
+package cisc3130.hw1;
 
 import java.util.Objects;
 
