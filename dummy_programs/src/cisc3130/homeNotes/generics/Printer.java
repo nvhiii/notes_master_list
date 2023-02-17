@@ -1,4 +1,4 @@
-package cisc3130.homeNotes;
+package cisc3130.homeNotes.generics;
 
 public class Printer <T extends Animal1> { // generic printer class
 

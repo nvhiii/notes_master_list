@@ -1,3 +1,5 @@
+package testing_random;
+
 public class typeInference {
 
     public void whatTypeAmI() {

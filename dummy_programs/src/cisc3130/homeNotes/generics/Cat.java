@@ -1,4 +1,4 @@
-package cisc3130.homeNotes;
+package cisc3130.homeNotes.generics;
 
 public class Cat extends Animal1 {
 

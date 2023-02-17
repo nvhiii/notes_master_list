@@ -1,3 +1,5 @@
+package testing_random;
+
 public class Animal {
 
     String name;

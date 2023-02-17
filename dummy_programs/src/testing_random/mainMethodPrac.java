@@ -1,3 +1,5 @@
+package testing_random;
+
 public class mainMethodPrac {
 
     public static void main(String[] args) {

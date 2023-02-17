@@ -1,3 +1,5 @@
+package testing_random;
+
 public class textBlockPractice {
 /*
     String textBlock = """ // beginning syntax, must have line break here at initialization
