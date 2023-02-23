@@ -1,0 +1,109 @@
+Nahi Khan
+CISC 3130 - Professor Lach
+23 February 2023
+
+Pre-Class Notes
+
+The Collections Framework (dev.java)
+
+ (1) Storing Data Using the Collections Framework
+
+ - implementation of the concepts on how to store, organize, and access data in memory
+
+ - it a set of interfaces that models different way of storing data in different type of containers
+
+ How to choose the right interface based on implementation:
+
+  1. What objects to store and iteration technique
+
+  2. Pushing objects to a queue and popping them
+
+  3. Retrieval of object(s) using a key
+
+  4. Access through indices
+
+  5. Sorting
+
+  6. Prevention of duplicates & nulls
+
+ Using the right implementation is crucial bc:
+
+  1. How will accessing be done
+
+  2. Objects lifetime, and will it exist at launch
+
+  3. Is the # of objects created important
+
+  4. Will the collection's data be accessed concurrently?
+
+ Collections v. Maps
+
+  Collections (Hierarchy):
+
+   - Stores objects and iterates over them
+   - Root interface is Collection, which extends the Iterable interface
+   - You can find interfaces to model QUEUES and STACKS in the Collection hierarchy
+
+
+  Maps (Hierarchy):
+
+   - stores an object along with a key
+    ** key represents the object
+
+  Iterator (Hierarchy):
+
+   - an object that can iterate over a collection of objects
+   - is part of the Collections Framework
+
+  Main 2 Categories of Interfaces in the Collections Framework:
+
+   1. Collections
+   2. Maps
+
+  Subcategory:
+
+   1. Queue
+
+  Side Category:
+
+   1. Iterator
+
+ Avoid Usage of Old Interfaces and Implementations:
+
+ - Vector + Stack
+
+  Vector:
+
+   - In a non-concurrent environment, you can use ArrayList over this
+
+    Concurrently = a lot of processors doing things simultaneously
+
+  Stack:
+
+   - In a non-concurrent environment, use ArrayDeque
+
+ Why Choose a Collection Over an Array?
+
+  - tracks # of elements it contains
+  - capacity of collection is not limited, almost any amount can be added
+  - a collection can control what elements can be stored inside
+  - can be queried for presence of an element
+
+   Query - question
+
+  - it provides operations that can work hand-in-hand w/ other collections
+
+ (2) Getting to Know the Collection Hierarchy
+
+  The Collections Framework is divided in several hierarchies of interfaces and classes.
+
+   1. Collection interface hierarchy
+
+    Iterable <- Collection <- List
+                    ^-------- Set <- SortedSet <- NavigableSet
+
+    ** Iterable interface is NOT part of the Collections Framework (but it is the super interface)
+
+  Storing Elements in a Container with the Collection Interface
+
+   -
